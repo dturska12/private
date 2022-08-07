@@ -1,0 +1,162 @@
+/*
+Bootstrap 5.1 breakpoints, for reference
+Breakpoint	        Class infix	    Dimensions
+X-Small	            None	        <576px
+Small	            sm	            ≥576px
+Medium	            md	            ≥768px
+Large	            lg	            ≥992px
+Extra large	        xl	            ≥1200px
+Extra extra large	xxl 	        ≥1400px
+
+@media screen and (max-width: 0px) {
+}
+*/
+
+div.leaderboard{
+    background-color: #B0AEFF;
+    padding: 100px 0 0;
+    background-image: url(../public/images/leaderboard/leaderboard-bg.svg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+div.leaderboard main {
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width: 767px) {
+    #navtop .navbar-nav.socials{
+      top: 210px;
+    }
+  }
+
+#navtop .casino .badge {
+    background: rgb(145,248,253);
+    background: linear-gradient(45deg, rgba(145,248,253,1) 0%, rgba(232,194,244,1) 50%, rgba(248,220,203,1) 100%);
+    transform: rotate(17deg);
+    position: relative;
+    pointer-events: none;
+    color: #46248A;
+    text-transform: uppercase;
+    font-weight: 300;
+    top: -6px;
+    right: 8px;
+}
+
+#leaderboard-wrapper{
+    border-radius: 30px;
+    box-shadow: 6px 6px 10px #00000033;
+}
+
+#leaderboard-wrapper table{
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #00000066;
+    letter-spacing: 0.07em;
+    margin: 0;
+    padding: 0;
+}
+
+.rankings-col-a table tr:first-child,
+.rankings-col-a table tr:first-child th:first-child{
+border-top-left-radius: 30px;
+}
+.rankings-col-a table tr:last-child,
+.rankings-col-a table tr:last-child th:first-child{
+    border-bottom-left-radius: 30px;
+}
+.rankings-col-b table tr:first-child,
+.rankings-col-b table tr:first-child td:last-child{
+border-top-right-radius: 30px;
+}
+.rankings-col-b table tr:last-child,
+.rankings-col-b table tr:last-child td:last-child{
+    border-bottom-right-radius: 30px;
+}
+@media screen and (max-width: 1199px) {
+    .rankings-col-a table tr:first-child,
+    .rankings-col-a table tr:first-child th:first-child{
+        border-top-left-radius: 30px;
+    }
+    .rankings-col-a table tr:first-child td:last-child{
+        border-top-right-radius: 30px;
+    }
+    .rankings-col-a table tr:last-child,
+    .rankings-col-a table tr:last-child th:first-child{
+        border-bottom-left-radius: 0px;
+    }
+    .rankings-col-b table tr:first-child,
+    .rankings-col-b table tr:first-child td:last-child{
+        border-top-right-radius: 0px;
+    }
+    .rankings-col-b table tr:last-child,
+    .rankings-col-b table tr:last-child td:last-child{
+        border-bottom-right-radius: 30px;
+    }
+    .rankings-col-b table tr:last-child th:first-child{
+        border-bottom-left-radius: 30px;
+    }
+}
+
+#leaderboard-wrapper table th {
+    max-width: 50px;
+    padding-left: 20px;
+}
+
+#leaderboard-wrapper .table>:not(caption)>*>*{
+    border-bottom-width: 0;
+}
+
+#leaderboard-wrapper .table-striped>tbody>tr:nth-of-type(even)>* {
+    --bs-table-accent-bg: #B0AEFFdd;
+    color: inherit;
+}
+#leaderboard-wrapper .table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: #bbbafadd;
+    color: inherit;
+}
+
+#ranking-first th,
+#ranking-second th,
+#ranking-third th{
+background-image: url(../public/images/leaderboard/bonbon-faded.png);
+background-position: 29px 5px;
+    background-repeat: no-repeat;
+    letter-spacing: 0.5em;
+}
+
+#ranking-first th,
+#ranking-first td{
+    --bs-table-accent-bg: transparent !important;
+    background-color: #FFC187;
+}
+#ranking-second th,
+#ranking-second td{
+    --bs-table-accent-bg: transparent !important;
+    background-color: #FF9393;
+}
+#ranking-third th,
+#ranking-third td{
+    --bs-table-accent-bg: transparent !important;
+    background-color: #F4AEFF;
+}
+#ranking-user th,
+#ranking-user td{
+    --bs-table-accent-bg: transparent !important;
+    background-color: #5B40A1;
+}
+
+div.leaderboard footer{
+    background-color: transparent;
+    padding: 0 0 20px;
+}
+
+footer .footer-logo{
+    width: 140px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+div.leaderboard footer p{
+    margin: 0;
+}

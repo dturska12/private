@@ -1,0 +1,223 @@
+/*
+Bootstrap 5.1 breakpoints, for reference
+Breakpoint	        Class infix	    Dimensions
+X-Small	            None	        <576px
+Small	            sm	            ≥576px
+Medium	            md	            ≥768px
+Large	            lg	            ≥992px
+Extra large	        xl	            ≥1200px
+Extra extra large	xxl 	        ≥1400px
+
+@media screen and (max-width: 0px) {
+}
+*/
+
+div.staking{
+    background-color: #B0AEFF;
+    padding: 100px 0 0;
+    background-image: url(../public/images/staking/staking-bg-blur.png);
+    background-size: cover;
+    background-position: top center;
+}
+@media screen and (max-width: 767px) {
+    div.staking{
+ padding-top: 20px;
+    }
+}
+
+div.staking main {
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width: 767px) {
+    #navtop .navbar-nav.socials{
+      top: 210px;
+    }
+  }
+
+#navtop .casino .badge {
+    background: rgb(145,248,253);
+    background: linear-gradient(45deg, rgba(145,248,253,1) 0%, rgba(232,194,244,1) 50%, rgba(248,220,203,1) 100%);
+    transform: rotate(17deg);
+    position: relative;
+    pointer-events: none;
+    color: #46248A;
+    text-transform: uppercase;
+    font-weight: 300;
+    top: -6px;
+    right: 8px;
+}
+
+#stakelist-wrapper{
+    border-radius: 30px;
+    background-color: #B0AEFFaa;
+    box-shadow: 6px 6px 10px #00000044;
+    padding: 30px;
+}
+
+#stakelist-wrapper .controls .selection span {
+    position: relative;
+    top: 2px;
+}
+
+@media screen and (max-width: 991px) {
+    .btn-group-lg>.btn, .btn-lg{
+        font-size: 1rem;
+    }
+}
+
+
+#stakelist-wrapper .controls button{
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 12px 20px;
+}
+#stakelist-wrapper .controls button:hover{
+    opacity: 0.7;
+}
+
+#stakelist-wrapper .controls button.btn.btn-primary {
+    background-color: #46248A;
+    border-color: #46248A;
+}
+
+#stakelist-wrapper .controls button.btn.btn-link{
+    color: #46248A;
+}
+
+#stakelist{
+    padding-top: 40px;
+}
+
+#stakelist .stakeitem {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 25px;
+    transition-property: transform;
+    transition-duration: 100ms;
+}
+
+#stakelist .stakeitem img{
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 4px 4px 7px #00000066;
+}
+
+#stakelist .stakeitem.staked img{
+    outline: 5px solid #9BF2FF;
+}
+
+#stakelist .stakeitem.staked.selected img,
+#stakelist .stakeitem.selected:hover img,
+#stakelist .stakeitem.selected img{
+    outline: 5px solid #46248A;
+}
+
+#stakelist .stakeitem:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+#stakelist .stakeitem:hover img{
+    outline: 5px solid #A593FF;
+}
+
+#stakelist .stakeitem .badge {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 12px 14px;
+}
+
+#stakelist .stakeitem .multiplier {
+    background-color: #732EFF;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 4px;
+}
+
+#stakelist .stakeitem .staked-badge {
+    background-color: #9BF2FF;
+    color: #732EFF;
+    position: absolute;
+    top: 0;
+    right: 4px;
+}
+#stakelist .stakeitem:not(.staked) .staked-badge{
+    display: none;
+}
+
+#stakelist .stakeitem .tastie-number {
+    background-color: #E1E0FF;
+    color: #732EFF;
+    display: inline-block;
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-top: 20px;    
+}
+
+#staking-stats {
+    position: fixed;
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+    #staking-stats{
+        position: static;
+        margin-top: 0;
+        transform: scale(0.75);
+    }
+}
+
+#staking-stats .stake-num {
+    color: #ffffff;
+    font-size: 110px;
+    text-shadow: 7px 7px 3px #46248a;
+    line-height: 140px;
+}
+
+#staking-stats .stake-label img{
+
+}
+
+#staking-stats .treat-perday,
+#staking-stats .treat-count{
+    font-size: 18px;
+    letter-spacing: 0.07em;
+    padding: 14px 26px;
+    display: inline-block;
+    margin: 20px 10px 0;
+}
+
+#staking-stats .treat-perday {
+    background-color: #DEDDFC;
+    color: #46248A;
+}
+
+#staking-stats .treat-count {
+    background-color: #46248A;
+    color: #ffffff;
+}
+
+#footer-top img{
+    width: 100%;
+}
+
+div.staking footer{
+    background-color: #B0AEFF;
+    padding: 0 0 20px;
+}
+
+footer .footer-logo{
+    width: 140px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+div.staking footer p{
+    margin: 0;
+}

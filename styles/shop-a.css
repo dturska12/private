@@ -1,0 +1,214 @@
+/*
+Bootstrap 5.1 breakpoints, for reference
+Breakpoint	        Class infix	    Dimensions
+X-Small	            None	        <576px
+Small	            sm	            ≥576px
+Medium	            md	            ≥768px
+Large	            lg	            ≥992px
+Extra large	        xl	            ≥1200px
+Extra extra large	xxl 	        ≥1400px
+
+@media screen and (max-width: 0px) {
+}
+*/
+
+div.shop{
+    background-color: #B0AEFF;
+    padding: 100px 0 0;
+    background-image: url(../public/images/shop/shop-bg.svg);
+    background-size: cover;
+    background-position: top center;
+}
+
+div.shop main {
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width: 767px) {
+    #navtop .navbar-nav.socials{
+      top: 210px;
+    }
+  }
+
+#navtop .casino .badge {
+    background: rgb(145,248,253);
+    background: linear-gradient(45deg, rgba(145,248,253,1) 0%, rgba(232,194,244,1) 50%, rgba(248,220,203,1) 100%);
+    transform: rotate(17deg);
+    position: relative;
+    pointer-events: none;
+    color: #46248A;
+    text-transform: uppercase;
+    font-weight: 300;
+    top: -6px;
+    right: 8px;
+}
+
+div.shop h1 {
+    text-shadow: 2px 4px 2px #4a2089;
+    margin-bottom: 30px;
+}
+
+#shoplist-wrapper{
+    border-radius: 30px;
+    background-color: #B0AEFF77;
+    box-shadow: 6px 6px 10px #00000044;
+    padding: 30px;
+}
+
+#treat-balance {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-size: 120%;
+}
+
+#shoplist-tabs {
+    margin: 40px 0;
+    background-color: #D9DBFF;
+    border-radius: 50rem;
+    padding: 6px 30px;
+    text-align: center;
+    width: 70%;
+    transform: translateX(20%);
+    justify-content: center;
+}
+@media screen and (max-width: 1199px) {
+    #shoplist-tabs {
+        width: auto;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #shoplist-tabs{
+        border-radius: 20px;
+    }
+    #shoplist-tabs  .nav-item{
+    margin-bottom: 10px;
+    }
+}
+
+#shoplist-tabs .nav-link{
+    text-transform: uppercase;
+    border: 3px solid #46248A;
+    color: #46248A;
+    padding: 4px 16px;
+    margin: 0 10px;
+}
+#shoplist-tabs .nav-link:hover{
+    opacity: 0.7;
+}
+#shoplist-tabs .nav-link.active{
+    background-color: #46248A;
+    color: #ffffff;
+}
+
+
+.shop-item{
+    border-radius: 20px;
+    background-color: #9864FF33;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.shop-item.special{
+    background: rgb(145,248,253);
+    background: linear-gradient(45deg, rgba(145,248,253,1) 0%, rgba(232,194,244,1) 50%, rgba(248,220,203,1) 100%);
+}
+
+.shop-item-top{
+    flex-grow: 1;
+    padding-bottom: 30px;
+}
+
+.shop-item h5{
+    background-color: #4A2089;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 20px 20px 0 0;
+    padding: 4px 20px;
+    text-align: center;
+    margin: 0;
+}
+.shop-item.special h5{
+    background: #FDD374;
+    background: linear-gradient(120deg, #E1C2F2 0%, #FDD374 100%);
+}
+
+.shop-item-img{
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+
+.shop-item .shop-item-socials{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.shop-item .shop-item-socials li{
+    display: inline-block;
+}
+
+.shop-item .shop-item-socials svg{
+    width: 20px;
+    fill: #4A2089;
+}
+
+.shop-item h4,
+.shop-item .purchased-stats,
+.shop-item .expiry-date,
+.shop-item .shop-item-price{
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px #00000066;
+}
+
+.shop-item h4 {
+    font-size: 120%;
+    margin: 0;
+}
+
+.shop-item .desc{
+    margin: 0;
+    padding: 0 10px 10px;
+    text-align: center;
+}
+
+.shop-item .expiry-date{
+    padding-top: 0;
+}
+
+.shop-item .shop-item-buy{
+    background-color: #46248A;
+    border-color: #46248A;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 12px 20px;
+}
+.shop-item .shop-item-buy:hover{
+    opacity: 0.7;
+}
+
+#footer-top img{
+    width: 100%;
+}
+
+div.shop footer{
+    background-color: #B0AEFF;
+    padding: 0 0 20px;
+}
+
+footer .footer-logo{
+    width: 140px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+div.shop footer p{
+    margin: 0;
+}
